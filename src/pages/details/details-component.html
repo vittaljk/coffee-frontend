@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Details</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <!--<ion-item>
+        <p>Get cost for the day</p>
+        <ion-label>Date(DD/MM/YY)</ion-label>
+        <ion-datetime displayFormat="DD/MM/YY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <button (click)="getCostForTheday(myDate)" ion-button color="secondary">Cost for day</button>
+    <span>Cost for the day: {{ costForTheDay }}</span>-->
+
+
+    <ion-item class="cost-item">
+        <p>Get cost for the month</p>
+        <ion-label>Date(MM/YY)</ion-label>
+        <ion-datetime displayFormat="MM/YY" [(ngModel)]="month"></ion-datetime>
+    </ion-item>
+
+    <div class="details">
+        <button class="cost-btn" (click)="getCostForTheMonth(month)" ion-button small color="secondary">Cost for Month</button>
+        <span class="total-text">Total: {{ costForTheMonth }}</span>
+    </div>
+
+
+    <!--<ion-item>
+        <p>Get cost for the year</p>
+        <ion-label>Date(YY)</ion-label>
+        <ion-datetime displayFormat="YY" [(ngModel)]="year"></ion-datetime>
+    </ion-item>
+    <button (click)="getCostForTheYear(year)" ion-button color="secondary">Cost for year</button>
+    <p>Cost for the year: {{ costForTheYear }}</p>-->
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-content padding>
+    <form [formGroup]="getFormGroup()" (ngSubmit)="submit()">
+        <ion-item>
+            <ion-label floating>Date</ion-label>
+            <ion-datetime placeholder="Date (DD/MM/YY)*" displayFormat="DD/MM/YY" formControlName="entryDate" [(ngModel)]="beverageEntry.entryDate"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Coffee count</ion-label>
+            <ion-input type="number" min="0" formControlName="coffeeCount" [(ngModel)]="beverageEntry.coffeeCount"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Tea count</ion-label>
+            <ion-input type="number" min="0" formControlName="teaCount" [(ngModel)]="beverageEntry.teaCount"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Milk count</ion-label>
+            <ion-input type="number" min="0" formControlName="milkCount" [(ngModel)]="beverageEntry.milkCount"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Badam milk count</ion-label>
+            <ion-input type="number" min="0" formControlName="badamMilkCount" [(ngModel)]="beverageEntry.badamMilkCount"></ion-input>
+        </ion-item>
+
+        <div class="form-btn">
+            <button ion-button block>Submit</button>
+        </div>
+    </form>
+</ion-content>

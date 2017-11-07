@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Welcome</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <!--<input type="text" #name>
+        <input type="text" #userName>
+        <input type="text" #email>
+        <input type="text" #password>
+        <p (click)="addUser(name.value, userName.value, email.value, password.value)">
+        add user
+        </p>-->
+        <div (click)="goToLogin()" class="login-btn-home">
+            <button ion-button block>Login</button>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <img class='home-page-bg' src="images/food-beans-coffee-drink.jpg"/>
+    </div>
+</ion-content>
